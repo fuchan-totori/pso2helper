@@ -1,0 +1,86 @@
+﻿<Window x:Class="pso2.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="能力登録画面" Height="500" Width="360">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Label x:Name="lcode" Content="コード" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" />
+        <Label x:Name="lability" Content="能力名" Grid.Row="0" Grid.Column="3" Grid.ColumnSpan="3" />
+        <Label x:Name="linheritance" Content="継承確率" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="6" />
+        <Label x:Name="lgenerate" Content="合成確率" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="6" />
+        <Label x:Name="lpower" Content="打撃力" Grid.Row="6" Grid.Column="0" />
+        <Label x:Name="lshoot" Content="射撃力" Grid.Row="6" Grid.Column="1" />
+        <Label x:Name="ltech" Content="法撃力" Grid.Row="6" Grid.Column="2" />
+        <Label x:Name="lbody" Content="打撃防御" Grid.Row="6" Grid.Column="3" />
+        <Label x:Name="lreact" Content="射撃防御" Grid.Row="6" Grid.Column="4" />
+        <Label x:Name="lmind" Content="法撃防御" Grid.Row="6" Grid.Column="5" />
+        <Label x:Name="larm" Content="技量" Grid.Row="8" Grid.Column="0" />
+        <Label x:Name="lhp" Content="HP" Grid.Row="8" Grid.Column="1" />
+        <Label x:Name="lpp" Content="PP" Grid.Row="8" Grid.Column="2" />
+        <Label x:Name="lblres" Content="打撃耐性" Grid.Row="8" Grid.Column="3" />
+        <Label x:Name="lstres" Content="射撃耐性" Grid.Row="8" Grid.Column="4" />
+        <Label x:Name="lmires" Content="法撃耐性" Grid.Row="8" Grid.Column="5" />
+        <Label x:Name="lflres" Content="炎耐性" Grid.Row="10" Grid.Column="0" />
+        <Label x:Name="licres" Content="氷耐性" Grid.Row="10" Grid.Column="1" />
+        <Label x:Name="lscres" Content="雷耐性" Grid.Row="10" Grid.Column="2" />
+        <Label x:Name="lwires" Content="風耐性" Grid.Row="10" Grid.Column="3" />
+        <Label x:Name="llires" Content="光耐性" Grid.Row="10" Grid.Column="4" />
+        <Label x:Name="lglres" Content="闇耐性" Grid.Row="10" Grid.Column="5" />
+        <Label x:Name="lbutton" Content="打込終了" Grid.Row="12" Grid.Column="4" Grid.ColumnSpan="2" HorizontalAlignment="Center" />
+        <TextBox x:Name="tcode" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Margin="3" />
+        <TextBox x:Name="tability" Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Margin="3" />
+        <TextBox x:Name="tinheritance1" Grid.Row="3" Grid.Column="0" Margin="3" />
+        <TextBox x:Name="tinheritance2" Grid.Row="3" Grid.Column="1" Margin="3" />
+        <TextBox x:Name="tinheritance3" Grid.Row="3" Grid.Column="2" Margin="3" />
+        <TextBox x:Name="tinheritance4" Grid.Row="3" Grid.Column="3" Margin="3" />
+        <TextBox x:Name="tinheritance5" Grid.Row="3" Grid.Column="4" Margin="3" />
+        <TextBox x:Name="tinheritance6" Grid.Row="3" Grid.Column="5" Margin="3" />
+        <TextBox x:Name="tgenerate2" Grid.Row="5" Grid.Column="1" Margin="3" />
+        <TextBox x:Name="tgenerate3" Grid.Row="5" Grid.Column="2" Margin="3" />
+        <TextBox x:Name="tgenerate4" Grid.Row="5" Grid.Column="3" Margin="3" />
+        <TextBox x:Name="tgenerate5" Grid.Row="5" Grid.Column="4" Margin="3" />
+        <TextBox x:Name="tgenerate6" Grid.Row="5" Grid.Column="5" Margin="3" />
+        <TextBox x:Name="tpower" Grid.Row="7" Grid.Column="0" Margin="3" />
+        <TextBox x:Name="tshoot" Grid.Row="7" Grid.Column="1" Margin="3" />
+        <TextBox x:Name="ttech" Grid.Row="7" Grid.Column="2" Margin="3" />
+        <TextBox x:Name="tbody" Grid.Row="7" Grid.Column="3" Margin="3" />
+        <TextBox x:Name="treact" Grid.Row="7" Grid.Column="4" Margin="3" />
+        <TextBox x:Name="tmind" Grid.Row="7" Grid.Column="5" Margin="3" />
+        <TextBox x:Name="tarm" Grid.Row="9" Grid.Column="0" Margin="3" />
+        <TextBox x:Name="thp" Grid.Row="9" Grid.Column="1" Margin="3" />
+        <TextBox x:Name="tpp" Grid.Row="9" Grid.Column="2" Margin="3" />
+        <TextBox x:Name="tblres" Grid.Row="9" Grid.Column="3" Margin="3" />
+        <TextBox x:Name="tstres" Grid.Row="9" Grid.Column="4" Margin="3" />
+        <TextBox x:Name="tmires" Grid.Row="9" Grid.Column="5" Margin="3" />
+        <TextBox x:Name="tflres" Grid.Row="11" Grid.Column="0" Margin="3" />
+        <TextBox x:Name="ticres" Grid.Row="11" Grid.Column="1" Margin="3" />
+        <TextBox x:Name="tscres" Grid.Row="11" Grid.Column="2" Margin="3" />
+        <TextBox x:Name="twires" Grid.Row="11" Grid.Column="3" Margin="3" />
+        <TextBox x:Name="tlires" Grid.Row="11" Grid.Column="4" Margin="3" />
+        <TextBox x:Name="tglres" Grid.Row="11" Grid.Column="5" Margin="3" />
+        <Button x:Name="bsubmit" Content="登録" Grid.Row="13" Grid.Column="4" Grid.ColumnSpan="2" Margin="5" />
+    </Grid>
+</Window>

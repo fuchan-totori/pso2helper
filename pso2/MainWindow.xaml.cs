@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Xml.Linq;
 
 namespace pso2
 {
@@ -26,10 +27,16 @@ namespace pso2
             Data hoge = new Data();
             textBox.DataContext = hoge;
 
-            List<Ability> ablist = new List<Ability>();
-            Ability test = new Ability(500);
-            ablist.Add(test);
-            textBox.DataContext = ablist[0].Code;
+            //List<Ability> ablist = new List<Ability>();
+            //Ability test = new Ability(500);
+            //ablist.Add(test);
+            //textBox.DataContext = ablist[0].Code;
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            var win = new Window1();
+            win.Show();
         }
     }
 }
